@@ -20,7 +20,7 @@ public class BattleManager {
 			if(winner != null) {break;}
 		}
 		//승자 출력
-		System.out.println(winner.name + " 의 승리!");
+		System.out.println(winner.getName() + " 의 승리!");
 		
 	}
 
@@ -28,10 +28,10 @@ public class BattleManager {
 			
 		//번갈아가면서 공격
 			attacker.bodyAttack();	//ㅇㅇㅇ 의 몸통박치기 !
-			int damage = attacker.atk - defender.def;	//데미지 계산
+			int damage = attacker.getAtk() - defender.getDef();	//데미지 계산
 			System.out.println("데미지 : " + damage);
-			defender.hp -= damage;	//데미지 적용
-			System.out.println(defender.name +" 의 남은 체력 : " + defender.hp);
+			defender.getHp -= damage;	//데미지 적용
+			System.out.println(defender.getName() +" 의 남은 체력 : " + defender.hp);
 			
 			//defender  죽었는지 판단. 죽었으면 승자 리턴.
 			if(defender.hp <= 0) {

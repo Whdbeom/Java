@@ -13,14 +13,16 @@ public class Main {
 		System.out.println("=====미니게임천국=====");
 		
 		GameManager gm = new GameManager();
+		
+		// 게임 정보 출력
 		gm.printGameInfo();
 		
-		//게임 번호 안내
+		// 게임 번호 안내
 
-		//게임 번호 입력 받기
+		// 게임 번호 입력 받기
 		String userInput = scanUserInput( );
 		
-		//게임 번호에 따라 게임 시작
+		// 게임 번호에 따라 게임 시작
 		switch(userInput) {
 		case "1" : gm.startUpDown(); break;
 		case "2" : gm.startRcp(); break;

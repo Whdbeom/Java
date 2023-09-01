@@ -8,6 +8,8 @@ public class GameManager {
 
 
 	public void printGameInfo( ) {
+		// 게임 번호 안내
+		System.out.println();
 		System.out.println("1. UPDOWN");
 		System.out.println("2. 가위바위보");
 		System.out.println("3. 포켓몬");

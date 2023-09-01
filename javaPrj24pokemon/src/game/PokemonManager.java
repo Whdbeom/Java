@@ -48,31 +48,31 @@ public class PokemonManager {
 		// 포켓몬 3마리 임의로 생성 
 		// p1,p2,p3 변수는 다른 여러 곳에서 사용할 예정이므로 static 변수로 작성
 		Main.p1 = new Pokemon();
-		Main.p1.name = "피카츄";
-		Main.p1.hp = 100;
-		Main.p1.atk = 30;
-		Main.p1.def = 5;
+		Main.p1.setName("피카츄");
+		Main.p1.setHp(100);
+		Main.p1.setAtk(30);
+		Main.p1.setDef(5);
 		
 		Main.p2 = new Pokemon();
-		Main.p2.name = "파이리";
-		Main.p2.hp = 90;
-		Main.p2.atk = 35;
-		Main.p2.def = 3;
-		Main.p3 = new Pokemon();
+		Main.p2.setName("파이리");
+		Main.p2.setHp(100);
+		Main.p2.setAtk(35);
+		Main.p2.setDef(6);
 		
-		Main.p3.name = "꼬부기";
-		Main.p3.hp = 110;
-		Main.p3.atk = 23;
-		Main.p3.def = 10;
+		Main.p3 = new Pokemon();
+		Main.p3.setName("꼬부기");
+		Main.p3.setHp(100);
+		Main.p3.setAtk(20);
+		Main.p3.setDef(10);
 	}
 	
 	public void printPokemonList() {
 		// 멤버변수 3개 출력 
 		System.out.println("원하시는 포켓몬을 선택하세요");
 		System.out.println("=====포켓몬 목록=====");
-		System.out.println("1. " + Main.p1.name);
-		System.out.println("2. " + Main.p2.name);
-		System.out.println("3. " + Main.p3.name);
+		System.out.println("1. " + Main.p1.getName());
+		System.out.println("2. " + Main.p2.getName());
+		System.out.println("3. " + Main.p3.getName());
 		System.out.println();	//줄바꿈 목적의 출력문
 		System.out.println("원하는 포켓몬 번호를 입력하세요 : ");
 	}
