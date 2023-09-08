@@ -7,11 +7,6 @@ public class Main {
 		//
 		Student st = new Student();
 		
-		st.part = "바보";
-		st.num = 10;
-		
-		System.out.println(st.part);
-		System.out.println(st.num);
 		
 		
 	}

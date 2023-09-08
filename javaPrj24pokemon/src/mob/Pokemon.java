@@ -2,6 +2,19 @@ package mob;
 
 public class Pokemon {
 	
+	
+	
+	public Pokemon() {
+	}
+
+	public Pokemon(String name, int atk, int def, int hp) {
+		this.name = name;
+		this.atk = atk;
+		this.def = def;
+		this.hp = hp;
+	}
+
+
 	private String name;
 	private int atk;
 	private int def;

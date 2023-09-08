@@ -30,11 +30,11 @@ public class BattleManager {
 			attacker.bodyAttack();	//ㅇㅇㅇ 의 몸통박치기 !
 			int damage = attacker.getAtk() - defender.getDef();	//데미지 계산
 			System.out.println("데미지 : " + damage);
-			defender.getHp -= damage;	//데미지 적용
-			System.out.println(defender.getName() +" 의 남은 체력 : " + defender.hp);
+			defender.setHp(defender.getHp() - damage); 	//데미지 적용
+			System.out.println(defender.getName() +" 의 남은 체력 : " + defender.getHp());
 			
 			//defender  죽었는지 판단. 죽었으면 승자 리턴.
-			if(defender.hp <= 0) {
+			if(defender.getHp() <= 0) {
 				return attacker;
 			} else {
 				return null;

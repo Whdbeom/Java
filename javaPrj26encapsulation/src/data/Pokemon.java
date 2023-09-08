@@ -5,7 +5,7 @@ public class Pokemon {
 	
 	// 기본 생성자 (매개변수 X)  // JVM 이 자동으로 생성 (생성자가 없을때)
 	public Pokemon() {
-
+		System.out.println("객체를 준비할게여");
 	}
 	
 	// 모든 필드에 대한 매개변수 있는 생성자
