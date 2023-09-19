@@ -1,43 +1,26 @@
 package jbjb;
-
 import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {	
 
 		Scanner sc = new Scanner(System.in);
 
-		int x = sc.nextInt();
-		int n = sc.nextInt();
-		
-		int[] a = new int[n];
-		int[] b = new int[n];
-		int[] cost = new int[n];
-		int sum = 0;
-		
-		for(int i = 0; i < n; i++) {
-			a[i] = sc.nextInt();
-			b[i] = sc.nextInt();	
-			cost[i] = a[i] * b[i];
-			sum += cost[i];
+		while(true) {
+			System.out.println("문자열을입려갷주세요");
+			String str = sc.nextLine();
+			if(str.equals("exit")) {
+				break;
+			} else {
+				System.out.println(str.length() + "글자입니다.");
+			}
 		}
 		
-//		for(int i = 0; i < n; i++) {
-//			cost[i] = a[i] * b[i];
-//		}
-//		
-//		for(int i = 0; i < n; i++) {
-//			sum += cost[i];
-//		}
 		
-		if ( x == sum) {
-			System.out.println("Yes");
-		} else {
-			System.out.println("No");
-		}
-		
+		System.out.println("프로그램을ㅈ ㅗㅇ료합니다");
 	}
-}
+	
 
+}
 
