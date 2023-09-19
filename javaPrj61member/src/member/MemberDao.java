@@ -21,8 +21,6 @@ public class MemberDao {
 	// 회원가입 // 파라미터로 전달받은 데이터 저장 공간에 넣기 
 	public boolean join(MemberData memberData) throws Exception {
 		// 할 일 
-//		pw = new PrintWriter(new FileWriter(file, true), true);
-//		pw.println(memberData.getId() + "#" + memberData.getPwd() + "#" + memberData.getNick());
 		FileWriter fw = new FileWriter(file);
 		String str = memberData.getId() + "#" + memberData.getPwd() + "#" + memberData.getNick();
 		fw.write(str);
@@ -47,6 +45,7 @@ public class MemberDao {
 		boolean pwdOk = memoPwd.equals(memberData.getPwd());
 		
 		boolean loginOk = idOk && pwdOk;
+		
 		// 결과 리턴
 		br.close();
 		return loginOk;
