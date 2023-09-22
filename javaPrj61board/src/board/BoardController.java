@@ -2,6 +2,7 @@ package board;
 
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 public class BoardController {
 	
@@ -51,14 +52,15 @@ public class BoardController {
 	} // write 끝
 
 	private void search() {
-		System.out.println("=====게시판 검색=====");
+		System.out.println("=====게시글 검색=====");
 		System.out.print("검색어 : ");
 		String searchTitle = sc.nextLine();
 		
 		try {
 			List<BoardData> x = dao.search(searchTitle);
-			
+//			Stream<BoardData> y = x.stream();
 			if(!x.isEmpty()) {
+//				y.forEach(name -> System.out.println(name));
 				for(int i = 0; i < x.size(); i++) {
 					System.out.println(x.get(i));
 				} 

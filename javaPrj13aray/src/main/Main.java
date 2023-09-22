@@ -1,9 +1,12 @@
 package main;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class Main {
 
 	public static void main(String[] args) {
-		
+	
 		// 배열
 		// 배열
 		// int 배열 5칸짜리 생성

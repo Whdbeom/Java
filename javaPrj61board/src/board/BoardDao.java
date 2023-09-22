@@ -37,15 +37,15 @@ public class BoardDao {
 		String search;
 
 		while((search = br.readLine()) != null) {
-			if(search.contains(searchTitle)) {
+			
 				String title = search.substring(0, search.indexOf("#"));
 				String name = search.substring(search.indexOf("#")+1, search.lastIndexOf("#"));
 				String content = search.substring(search.lastIndexOf("#")+1);
 				
-				BoardData bd = new BoardData(title, name, content);
-				arrayList.add(bd);
-
-			} 
+				if(title.contains(searchTitle)) {
+					BoardData bd = new BoardData(title, name, content);
+					arrayList.add(bd);
+				} 
 		}
 		return arrayList;
 	}
